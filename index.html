@@ -20,40 +20,30 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title en" id="myModalLabelEn">Write me something</h4>
-                    <h4 class="modal-title ru hidden-xs-up" id="myModalLabelRu">Напишите мне что-нибудь</h4>
+                    <h4 class="modal-title" id="myModalLabelEn"><span class="en">Write me something</span><span class="ru hidden-xs-up">Напишите мне что-нибудь</span></h4>
                 </div>
 
                 <div class="modal-body">
-
                         <form>
                             <fieldset class="form-group">
-                                <textarea class="form-control en" id="text-area-form" placeholder="Your message" rows="8"></textarea>
-                                <textarea class="form-control ru hidden-xs-up" id="text-area-form-rus" placeholder="Ваше сообщение" rows="8"></textarea>
-                                <input type="email" class="form-control en" id="feedback-email-field" placeholder="Your email">
-                                <input type="email" class="form-control ru hidden-xs-up" id="feedback-email-field-ru" placeholder="Ваш электронный ящик">
+                                <textarea class="form-control" id="text-area-form" placeholder="Your message" rows="8"></textarea>
+                                <input type="email" class="form-control" id="feedback-email-field" placeholder="Your email">
                             </fieldset>
                         </form>
                 </div>
 
                 <div class="modal-footer">
-                    <div class="alert alert-success text-xs-center en" role="alert">
-                        Thanks, your message has been sent.
+                    <div class="alert alert-success text-xs-center" role="alert">
+                       <span class="en">Thanks, your message has been sent.</span><span class="ru hidden-xs-up">Сообщение успешно отправлено.</span>
                     </div>
-                    <div class="alert alert-success text-xs-center ru hidden-xs-up" role="alert">
-                        Сообщение успешно отправлено.
-                    </div>
-                    <div class="alert alert-danger text-xs-center en" role="alert">
-                        Something went wrong. Try submitting again later.
-                    </div>
-                    <div class="alert alert-danger text-xs-center ru hidden-xs-up" role="alert">
-                        Что-то пошло не так, попробуйте еще раз.
+                    <div class="alert alert-danger text-xs-center" role="alert">
+                       <span class="en">Something went wrong. Try submitting again later.</span>
+                       <span class="ru hidden-xs-up">Что-то пошло не так, попробуйте еще раз.</span>
                     </div>
 
-                    <button type="button" class="btn btn-secondary en" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-secondary ru hidden-xs-up" data-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-primary en" onclick="postMessage()">Send</button>
-                    <button type="button" class="btn btn-primary ru hidden-xs-up" onclick="postMessage()">Отправить</button>
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="en">Close</span><span class="ru hidden-xs-up">Закрыть</span></button>
+                    <button type="button" class="btn btn-primary en" onclick="postMessage()"><span class="en">Send</span><span class="ru hidden-xs-up">Отправить</span></button>
                 </div>
             </div>
         </div>
@@ -104,7 +94,7 @@
                         <li><span class="en">HTML5, CSS3, Bootstrap</span><span class="ru hidden-xs-up">HTML5, CSS3, Bootstrap</span></li>
                         <li><span class="en">AJAX, jQuery, ReactJS</span><span class="ru hidden-xs-up">AJAX, jQuery, ReactJS</span></li>
                         <li><span class="en">UX/UI, Adobe Photoshop</span><span class="ru hidden-xs-up">UX/UI, Adobe Photoshop</span></li>
-                        <li><span class="en">Revision control (mercurial), node.js (basics)</span><span class="ru hidden-xs-up">Revision control (mercurial), node.js (basics)</span></li>
+                        <li><span class="en">VCS (git), node.js (basics)</span><span class="ru hidden-xs-up">VCS (git), node.js (basics)</span></li>
                     </ul>
                 </div>
 
