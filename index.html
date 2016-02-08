@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link type="text/css" href="stylesheet.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title en" id="myModalLabelEn">Write me something</h4>
+                    <h4 class="modal-title ru hidden-xs-up" id="myModalLabelRu">Напишите мне что-нибудь</h4>
+                </div>
+
+                <div class="modal-body">
+
+                        <form>
+                            <fieldset class="form-group">
+                                <textarea class="form-control en" id="text-area-form" placeholder="Your message" rows="8"></textarea>
+                                <textarea class="form-control ru hidden-xs-up" id="text-area-form-rus" placeholder="Ваше сообщение" rows="8"></textarea>
+                                <input type="email" class="form-control en" id="feedback-email-field" placeholder="Your email">
+                                <input type="email" class="form-control ru hidden-xs-up" id="feedback-email-field-ru" placeholder="Ваш электронный ящик">
+                            </fieldset>
+                        </form>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="alert alert-success text-xs-center en" role="alert">
+                        Thanks, your message has been sent.
+                    </div>
+                    <div class="alert alert-success text-xs-center ru hidden-xs-up" role="alert">
+                        Сообщение успешно отправлено.
+                    </div>
+                    <div class="alert alert-danger text-xs-center en" role="alert">
+                        Something went wrong. Try submitting again later.
+                    </div>
+                    <div class="alert alert-danger text-xs-center ru hidden-xs-up" role="alert">
+                        Что-то пошло не так, попробуйте еще раз.
+                    </div>
+
+                    <button type="button" class="btn btn-secondary en" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary ru hidden-xs-up" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary en" onclick="postMessage()">Send</button>
+                    <button type="button" class="btn btn-primary ru hidden-xs-up" onclick="postMessage()">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="name text-xs-center"><span class="en">Kate Kozelkova</span><span class="ru hidden-xs-up">Екатерина Козелкова</span></h1>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 text-xs-center test">
+                <div class="profilePic-contacts-container">
+                    <div class="profilePic-container">
+                        <img src="https://pp.vk.me/c633331/v633331274/11fbe/qjAu8G7si08.jpg" class="profilePic center-block img-circle img-fluid" alt="Responsive img">
+                    </div>
+
+                    <div class="contacts">
+                        <div class="network-link-container">
+                            <a class="network-link" href="https://facebook.com/ekozelkova">facebook</a>
+                            <a class="network-link" href="https://twitter.com/ekozelkova">twitter</a>
+                            <a href="https://vk.com/ekozelkova"><span class="network-link en">VK</span><span class="network-link ru hidden-xs-up">ВКонтакте</span></a>
+                        </div>
+
+                        <div><span class="en">Mobile: +79227576493</span><span class="ru hidden-xs-up">Мобильный: +79227576493</span></div>
+                        <div>Email: kate.kozelkova@gmail.com</div>
+                        <div><span class="en">Based in Chelyabinsk, Russia</span><span class="ru hidden-xs-up">Нахожусь в Челябинске.</span></div>
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal" href="#" class="contact-me-now-link">
+                            <span class="en">Contact me now</span><span class="ru hidden-xs-up"> Черкните мне строчку</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-xs-12 col-md-6 center-block test">
+                <div class="skills-bio-container">
+                    <div class="bio">
+                        <p><span class="en">I am a student of an IT faculty (graduation in 2017).</span><span class="ru hidden-xs-up">Учусь на инженера-программиста (выпуск в 2017).</span></p>
+                        <p><span class="en">Interested in web design, drawing, calligraphy, photography and cycling.</span><span class="ru hidden-xs-up">Люблю веб-дизайн, рисование, каллиграфию, фотографию и велик.</span></p>
+                    </div>
+                    <h4 class="skills-head">
+                        <span class="en">Skills</span><span class="ru hidden-xs-up">Навыки</span>
+                    </h4>
+                    <ul class="skills-list">
+                        <li><span class="en">HTML5, CSS3, Bootstrap</span><span class="ru hidden-xs-up">HTML5, CSS3, Bootstrap</span></li>
+                        <li><span class="en">AJAX, jQuery, ReactJS</span><span class="ru hidden-xs-up">AJAX, jQuery, ReactJS</span></li>
+                        <li><span class="en">UX/UI, Adobe Photoshop</span><span class="ru hidden-xs-up">UX/UI, Adobe Photoshop</span></li>
+                        <li><span class="en">Revision control (mercurial), node.js (basics)</span><span class="ru hidden-xs-up">Revision control (mercurial), node.js (basics)</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container center-block">
+            <div class="text-xs-center">
+                    <a class="language" href="#">Русский</a>
+                    <a class="language" href="#">English</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
