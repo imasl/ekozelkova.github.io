@@ -57,7 +57,7 @@ body {
 .bio p {
     margin: 0;
 }
-.language {
+.languageRu, .languageEn {
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -69,8 +69,12 @@ footer {
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
 }
+a {
+    text-decoration-line: none;
+}
 a:hover {
     color: red;
+    text-decoration: none;
 }
 #feedback-email-field {
     margin-top: 20px;
@@ -107,6 +111,7 @@ a:hover {
         font-size: 25px;
     }
 }
+
 
 @media(max-width: 767px) {
     body {

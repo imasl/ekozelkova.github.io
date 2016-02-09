@@ -15,7 +15,15 @@ var postMessage = function() {
     };
 
 $(document).ready(function() {
-    $(".language").on("click", function () {
-        $('.en,.ru').toggleClass("hidden-xs-up");
+    $(".languageRu").on("click", function () {
+        $('.ru').removeClass('hidden-xs-up');
+        $('.en').addClass("hidden-xs-up");
+    });
+});
+
+$(document).ready(function() {
+    $('.languageEn').on('click', function() {
+        $('.ru').addClass('hidden-xs-up');
+        $('.en').removeClass('hidden-xs-up');
     });
 });
