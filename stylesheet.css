@@ -6,6 +6,7 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 70px;
     font-size: 20px;
+    background-color:  #00FF00;
 }
 .name {
     font-size: 40px;
